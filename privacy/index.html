@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partenza — Privacy</title>
+<style>
+  :root { --bg: #fff; --fg: #1a1a1a; --muted: #666; --link: #0b5cad; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #121212; --fg: #e8e8e8; --muted: #9a9a9a; --link: #7ab4ff; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+  a { color: var(--link); }
+  h1 { margin-bottom: 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  hr { border: 0; border-top: 1px solid var(--muted); opacity: .3; margin: 3rem 0; }
+</style>
+</head>
+<body>
+
+<p class="muted"><a href="#it">Italiano</a> · <a href="#en">English</a></p>
+
+<!-- ============================== ITALIANO ============================== -->
+<section id="it" lang="it">
+<h1>Informativa sulla privacy di Partenza</h1>
+<p class="muted">Ultimo aggiornamento: 23 settembre 2026 · Versione beta</p>
+
+<p>Partenza è un'app gratuita per i trasporti pubblici, in fase di beta test, sviluppata da uno
+sviluppatore indipendente in Italia. Questa pagina spiega quali dati raccoglie l'app, perché, e
+cosa puoi fare al riguardo. <strong>Non vendiamo i tuoi dati, non mostriamo pubblicità e non ti
+tracciamo in altre app.</strong></p>
+
+<h2>Titolare del trattamento</h2>
+<p>Lo sviluppatore di Partenza. Contatto: <a href="mailto:partenzaadmin@gmail.com">partenzaadmin@gmail.com</a></p>
+
+<h2>Cosa resta solo sul tuo telefono</h2>
+<p>Percorsi e luoghi salvati, preferenze e impostazioni delle notifiche sono salvati solo sul tuo
+dispositivo. Le notifiche di sciopero vengono calcolate sul telefono: non abbiamo un server che
+sa quali linee segui.</p>
+
+<h2>Cosa raccogliamo e perché</h2>
+
+<h3>1. Statistiche di utilizzo (PostHog)</h3>
+<p>Per capire se l'app funziona e cosa migliorare, l'app invia eventi di utilizzo a
+<a href="https://posthog.com/privacy">PostHog</a>, sul loro cloud europeo (Francoforte, Germania).
+Gli eventi sono legati a un <strong>identificativo casuale</strong> creato all'installazione (il
+"Tester ID" nella schermata Profilo), non al tuo nome, email o numero di telefono. Includono:</p>
+<ul>
+  <li>cosa fai nell'app: ricerche avviate, risultati mostrati, percorsi aperti o salvati,
+    avvisi di sciopero visti, notifiche inviate e aperte;</li>
+  <li>per le ricerche, solo zone approssimative (celle di circa 5 × 5 km) di partenza e arrivo,
+    l'ora e il giorno della settimana del viaggio — mai coordinate esatte, indirizzi o date;</li>
+  <li>dati tecnici: modello del dispositivo, sistema operativo, versione dell'app, lingua;</li>
+  <li>il tuo indirizzo IP, che PostHog usa per stimare paese e città.</li>
+</ul>
+
+<h3>2. Registrazioni delle sessioni (solo iPhone)</h3>
+<p>Su iOS, PostHog registra le sessioni d'uso dell'app come sequenze di schermate, per vedere
+dove le persone si bloccano. Le registrazioni mostrano ciò che appare sullo schermo di Partenza,
+compresi i nomi che dai ai percorsi salvati (per esempio "Casa" o "Lavoro"). Non registrano altre
+app. Su Android non ci sono registrazioni.</p>
+
+<h3>3. Ricerche di percorsi</h3>
+<p>Quando cerchi un percorso, i luoghi di partenza e arrivo (nome o coordinate) vengono inviati
+al nostro server di calcolo dei percorsi, ospitato da Hetzner in Germania, che li usa solo per
+calcolare il percorso. Non costruiamo uno storico delle tue ricerche. I log tecnici del server
+possono contenere per poco tempo l'indirizzo IP e la richiesta, a scopo di diagnostica.</p>
+
+<h3>4. Posizione</h3>
+<p>Se lo permetti, l'app usa la tua posizione <strong>solo mentre è aperta</strong>, per partire
+da dove sei e mostrarti sulla mappa. Non ti tracciamo in background. La posizione esatta non
+finisce nelle statistiche: al massimo la zona di circa 5 km descritta sopra.</p>
+
+<h3>5. Servizi esterni che l'app contatta direttamente</h3>
+<p>Per mostrare mappe e dati in tempo reale, il telefono si collega direttamente a questi
+servizi, che vedono il tuo indirizzo IP e cosa viene richiesto:</p>
+<ul>
+  <li>OpenFreeMap — mappe;</li>
+  <li>ViaggiaTreno (Trenitalia) — stato dei treni in tempo reale;</li>
+  <li>GTT — dati dei mezzi in tempo reale a Torino;</li>
+  <li>Ministero delle Infrastrutture e dei Trasporti — calendario degli scioperi.</li>
+</ul>
+
+<h3>6. Feedback</h3>
+<p>Se tocchi "Invia feedback", si apre un modulo Google Forms con il tuo Tester ID già compilato.
+Quello che scrivi lo decidi tu, e vale anche <a href="https://policies.google.com/privacy">l'informativa di Google</a>.</p>
+
+<h2>Base giuridica</h2>
+<p>Trattiamo questi dati sulla base del nostro legittimo interesse (art. 6(1)(f) GDPR) a far
+funzionare l'app e a migliorarla durante la beta. Puoi opporti in qualsiasi momento: scrivici e
+cancelliamo i tuoi dati, oppure disinstalla l'app.</p>
+
+<h2>Condivisione</h2>
+<p>I dati raccolti durante la beta <strong>non vengono mai venduti</strong> né condivisi per scopi
+commerciali. Li vedono solo lo sviluppatore e i fornitori elencati sopra, che li trattano per nostro conto.</p>
+
+<h2>Conservazione</h2>
+<p>Le registrazioni delle sessioni vengono cancellate automaticamente dopo circa 30 giorni. Gli
+eventi di utilizzo vengono conservati al massimo 12 mesi dopo la fine della beta, poi cancellati.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Puoi chiedere di accedere ai tuoi dati, correggerli, cancellarli o opporti al trattamento.
+Scrivi a <a href="mailto:partenzaadmin@gmail.com">partenzaadmin@gmail.com</a> indicando il tuo
+Tester ID (Profilo → tocca per copiarlo): senza, non possiamo trovare i tuoi dati, perché non
+sappiamo chi sei. Puoi anche presentare reclamo al
+<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>.</p>
+
+<h2>Minori</h2>
+<p>Partenza non è destinata a minori di 14 anni.</p>
+
+<h2>Modifiche</h2>
+<p>Se questa informativa cambia, aggiorneremo la data in cima alla pagina. Prima del lancio pubblico
+cambierà: l'app chiederà il tuo consenso prima di raccogliere statistiche.</p>
+</section>
+
+<hr>
+
+<!-- =============================== ENGLISH =============================== -->
+<section id="en" lang="en">
+<h1>Partenza Privacy Policy</h1>
+<p class="muted">Last updated: 23 September 2026 · Beta version</p>
+
+<p>Partenza is a free public-transport app in beta testing, built by an independent developer in
+Italy. This page explains what data the app collects, why, and what you can do about it.
+<strong>We don't sell your data, show ads, or track you across other apps.</strong></p>
+
+<h2>Who is responsible</h2>
+<p>The Partenza developer (data controller). Contact: <a href="mailto:partenzaadmin@gmail.com">partenzaadmin@gmail.com</a></p>
+
+<h2>What stays on your phone</h2>
+<p>Saved routes and places, preferences and notification settings are stored only on your device.
+Strike notifications are worked out on the phone: we have no server that knows which lines you follow.</p>
+
+<h2>What we collect and why</h2>
+
+<h3>1. Usage analytics (PostHog)</h3>
+<p>To learn whether the app works and what to improve, the app sends usage events to
+<a href="https://posthog.com/privacy">PostHog</a>, on its EU cloud (Frankfurt, Germany). Events are
+tied to a <strong>random ID</strong> created at install (the "Tester ID" on the Profile screen),
+not to your name, email or phone number. They include:</p>
+<ul>
+  <li>what you do in the app: searches started, results shown, routes opened or saved, strike
+    warnings seen, notifications sent and opened;</li>
+  <li>for searches, only approximate areas (cells of about 5 × 5 km) for start and destination, plus
+    the hour and weekday of travel — never exact coordinates, addresses or dates;</li>
+  <li>technical data: device model, operating system, app version, language;</li>
+  <li>your IP address, which PostHog uses to estimate your country and city.</li>
+</ul>
+
+<h3>2. Session recordings (iPhone only)</h3>
+<p>On iOS, PostHog records app sessions as a sequence of screenshots, so we can see where people
+get stuck. Recordings show what is on Partenza's screen, including the names you give saved routes
+(for example "Home" or "Work"). They don't record other apps. Android has no recordings.</p>
+
+<h3>3. Route searches</h3>
+<p>When you search for a route, the start and destination (name or coordinates) are sent to our
+routing server, hosted by Hetzner in Germany, which uses them only to compute the route. We don't
+build a history of your searches. The server's technical logs may briefly hold the IP address and
+the request, for troubleshooting.</p>
+
+<h3>4. Location</h3>
+<p>If you allow it, the app uses your location <strong>only while it is open</strong>, to start
+routes from where you are and show you on the map. We never track you in the background. Your exact
+position never goes into analytics: at most the ~5 km area described above.</p>
+
+<h3>5. Outside services the app contacts directly</h3>
+<p>To show maps and live data, your phone connects directly to these services, which see your IP
+address and what is requested:</p>
+<ul>
+  <li>OpenFreeMap — maps;</li>
+  <li>ViaggiaTreno (Trenitalia) — live train status;</li>
+  <li>GTT — live vehicle data in Turin;</li>
+  <li>Italian Ministry of Infrastructure and Transport — strike calendar.</li>
+</ul>
+
+<h3>6. Feedback</h3>
+<p>If you tap "Send feedback", a Google Forms page opens with your Tester ID filled in. What you
+write is up to you, and <a href="https://policies.google.com/privacy">Google's privacy policy</a> also applies.</p>
+
+<h2>Legal basis</h2>
+<p>We process this data on the basis of our legitimate interest (GDPR Art. 6(1)(f)) in running
+the app and improving it during the beta. You can object at any time: write to us and we delete
+your data, or uninstall the app.</p>
+
+<h2>Sharing</h2>
+<p>Data collected during the beta is <strong>never sold</strong> or shared for commercial purposes.
+Only the developer and the providers listed above, acting on our behalf, can see it.</p>
+
+<h2>Retention</h2>
+<p>Session recordings are deleted automatically after about 30 days. Usage events are kept for at
+most 12 months after the beta ends, then deleted.</p>
+
+<h2>Your rights</h2>
+<p>You can ask to access, correct or delete your data, or object to its processing. Write to
+<a href="mailto:partenzaadmin@gmail.com">partenzaadmin@gmail.com</a> with your Tester ID (Profile →
+tap to copy): without it we can't find your data, because we don't know who you are. You can also
+complain to your data protection authority; in Italy, the
+<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>.</p>
+
+<h2>Children</h2>
+<p>Partenza is not meant for children under 14.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we'll update the date at the top. It will change before the public
+launch: the app will ask for your consent before collecting analytics.</p>
+</section>
+
+</body>
+</html>
